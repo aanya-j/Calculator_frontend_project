@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #222;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    width: 320px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#display {
+    width: 100%;
+    height: 70px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 28px;
+    text-align: right;
+    background: #333;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #666;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+/* Operator Buttons */
+.row1 .button:nth-child(4),
+.row2 .button:nth-child(4),
+.row3 .button:nth-child(4),
+.row4 .button:nth-child(4) {
+    background: #ff9500;
+}
+
+.row1 .button:nth-child(4):hover,
+.row2 .button:nth-child(4):hover,
+.row3 .button:nth-child(4):hover,
+.row4 .button:nth-child(4):hover {
+    background: #ffad33;
+}
+
+/* AC and DEL */
+.row1 .button:nth-child(1),
+.row1 .button:nth-child(2) {
+    background: #d9534f;
+}
+
+.row1 .button:nth-child(1):hover,
+.row1 .button:nth-child(2):hover {
+    background: #e86a66;
+}
+
+/* Equal Button */
+.row5 .button:nth-child(3) {
+    background: #28a745;
+}
+
+.row5 .button:nth-child(3):hover {
+    background: #34c759;
+}
